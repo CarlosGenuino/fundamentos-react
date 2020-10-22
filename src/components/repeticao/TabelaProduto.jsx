@@ -9,13 +9,20 @@ export default props => {
             <tr key={produto.id}>
                 <td>{produto.id}</td>
                 <td>{produto.nome}</td>
-                <td>{produto.preco}</td>
+                <td>R$ {produto.preco.toFixed(2).replace('.', ',')}</td>
             </tr>
         )
     })
 
     return (
         <table className="center">
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Preço</td>
+                </tr>
+            </thead>
             {tableRows}
         </table>
     )
