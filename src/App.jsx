@@ -10,12 +10,20 @@ import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProduto from './components/repeticao/TabelaProduto';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UserInfo from './components/condicional/UserInfo';
 
 export default () => (
   <div id="app">
     <h1>Fundamento React</h1>
     
     <div className="cards">
+
+        <Card titulo="Renderizar Par ou Impar" color="#996699">
+            <ParOuImpar numero={8}></ParOuImpar>
+            <UserInfo usuario={{nome: 'José'}}></UserInfo>
+        </Card>
+
 
         <Card titulo="#Desafio 2 - Tabela de Produtos" color="#993366">
             <TabelaProduto></TabelaProduto>
