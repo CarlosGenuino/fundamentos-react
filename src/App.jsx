@@ -8,12 +8,18 @@ import Random from './components/basicos/Randomico'
 import Card from './components/layout/Card';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
+import ListaAlunos from './components/repeticao/ListaAlunos';
 
 export default () => (
   <div id="app">
     <h1>Fundamento React</h1>
     
     <div className="cards">
+
+        <Card titulo="Repetições" color="#339966">
+            <ListaAlunos></ListaAlunos>
+        </Card>
+
         <Card titulo="Componentes com Filhos" color="#00C8F8">
             <Familia sobrenome="Souza">
                 <FamiliaMembro nome="João"  />
