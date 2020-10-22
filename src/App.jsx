@@ -12,12 +12,18 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProduto from './components/repeticao/TabelaProduto';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UserInfo from './components/condicional/UserInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 
 export default () => (
   <div id="app">
     <h1>Fundamento React</h1>
     
     <div className="cards">
+
+
+        <Card titulo="Comunicação Direta" color="#996699">
+            <DiretaPai/>
+        </Card>
 
         <Card titulo="Renderizar Par ou Impar" color="#996699">
             <ParOuImpar numero={8}></ParOuImpar>
