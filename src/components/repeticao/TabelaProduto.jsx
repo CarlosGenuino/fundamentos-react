@@ -23,7 +23,9 @@ export default props => {
                     <td>Preço</td>
                 </tr>
             </thead>
-            {tableRows}
+            <tbody>
+                {tableRows}
+            </tbody>
         </table>
     )
 
