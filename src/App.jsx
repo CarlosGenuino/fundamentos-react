@@ -16,12 +16,18 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import InputForm from './components/formulario/InputForm';
 import Contador from './components/contador/Contador';
+import MegaSenaGenerator from './components/megasena/MegaSenaGenerator';
 
 export default () => (
   <div id="app">
     <h1>Fundamento React</h1>
     
     <div className="cards">
+        <Card titulo="#Desafio 3 - Mega da Virada">
+            <MegaSenaGenerator
+              repeat={false} />
+        </Card>
+
         <Card titulo="#10 - Contador" color="#773126">
             <Contador valor={10} />
         </Card>

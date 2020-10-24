@@ -37,7 +37,7 @@ class Contador extends Component {
 
     render(){
         return (
-            <div>
+            <div className="contador">
                 <PassoForm 
                     passo={this.state.passo}
                     onPassChange={this.onChangePasso} 
